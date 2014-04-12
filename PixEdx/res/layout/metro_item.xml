@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:layout_gravity="left"
+   >
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        
+        >
+
+        <ImageView
+           android:id="@+id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerInside"
+            android:layout_margin="2dp"
+            />
+       <!--   <com.android.volley.toolbox.NetworkImageView
+		   	android:id="@+id/image"
+		    android:layout_width="75sp"
+		    android:layout_height="75sp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="5dp"
+		    android:contentDescription="category icon" 
+	         />   
+ -->
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="test"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/metroitem_fontsize" />
+    </LinearLayout>
+
+</LinearLayout>

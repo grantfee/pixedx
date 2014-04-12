@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置" 
+        android:layout_gravity="left"
+        android:textSize="25sp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="7" 
+        android:layout_margin="30dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="0"
+            android:text="服务器地址:" />
+
+        <EditText
+            android:id="@+id/editTextIp"
+            android:layout_width="160dp"
+             android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+         	android:singleLine="true"
+         	android:maxLength="15"
+            >
+
+            <requestFocus />
+        </EditText>
+        
+        <TextView
+        android:id="@+id/textViewPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="端口:" />
+
+	    <EditText
+	        android:id="@+id/editTextPort"
+	        android:layout_width="30dp"
+	        android:layout_height="wrap_content" 
+	        android:text="80"
+	        android:singleLine="true"
+	        
+	        android:layout_gravity="fill"
+	        />
+	    
+	    
+    </GridLayout>
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:gravity="center">
+	    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  确    认  " />
+
+	    <Button
+	        android:id="@+id/buttonCancel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="  取    消  " />
+	 </LinearLayout>
+
+</LinearLayout>

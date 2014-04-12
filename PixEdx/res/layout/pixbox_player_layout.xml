@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+     >
+        <SurfaceView
+            android:id="@+id/mSurfaceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"  
+            android:layout_gravity="center"
+            android:focusableInTouchMode="true">
+        </SurfaceView>
+
+       <ProgressBar 
+           android:id="@+id/pb"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           />
+       <TextView
+             android:id="@+id/textViewBufferStat"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginTop="30dp"
+             android:text="KB/s" />
+
+          <LinearLayout
+             android:id="@+id/controlBarContainer"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical" 
+             
+	         android:layout_gravity="bottom|center"
+	         android:background="#000000"
+	         android:alpha="0.6">
+	         <Button
+				
+	            android:layout_gravity="bottom|center"
+	            android:id="@+id/play"
+	            android:layout_width="60dp"
+	            android:layout_height="30dp"
+	            android:background="@drawable/movie_stop_bt"
+	            />
+	           <!-- 设置layout height为wrap_content,调节minHeight,maxHeight -->
+	          <SeekBar
+			            android:id="@+id/seekbar"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center"
+			            android:layout_marginLeft="20dp"
+			            android:layout_marginRight="20dp"
+			            android:minHeight="6dp"
+			            android:maxHeight="12dp"
+						android:thumb="@drawable/player_seekbar_thumb"
+			            android:progressDrawable="@drawable/player_seekbar_bg" 
+			            android:thumbOffset="3dp"  
+
+			           />
+		         <RelativeLayout
+	             android:id="@+id/rlTime"
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:layout_marginLeft="10dp"
+	             android:layout_marginRight="10dp"
+	             android:layout_gravity="center"
+	             android:orientation="horizontal" 
+		         android:background="#000000"
+		        >
+
+		             <TextView
+		                 android:id="@+id/textViewStartTime"
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:text="00:00:00"
+		                 android:layout_gravity="center"
+		                 
+		             />
+
+			         <TextView
+			             android:id="@+id/textViewEndTime"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:layout_alignParentRight="true"
+			             android:layout_alignParentTop="true"
+			             android:text="01:32" />
+
+		      </RelativeLayout>   
+         </LinearLayout>
+        
+         <RelativeLayout
+            android:id="@+id/playerTitleBar"
+	        android:background="#000000"
+	        android:focusable="true"
+	        android:alpha="0.6"
+	        android:gravity="top"
+	        android:layout_gravity="top"
+	       
+	        android:layout_width="fill_parent"
+	        android:layout_height="55dp" >
+
+	        <TextView
+	            android:id="@+id/textViewPlayerTitle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="60dp"
+	            android:textSize="20sp"
+	            android:text="" />
+
+	        <TextView
+	            android:id="@+id/textViewCurTime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="60dp"
+	            android:textSize="20sp"
+	            android:text="" />
+
+    </RelativeLayout>
+
+         
+
+    </FrameLayout>
+

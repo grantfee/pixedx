@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/app_bg">
+	 <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:orientation="horizontal"
+     	android:layout_weight="0.8"
+     	android:baselineAligned="false"
+     	android:layout_marginLeft="30dp"
+     	android:layout_marginRight="30dp"
+     	android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+		 <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+      		
+            android:orientation="horizontal" 
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+		        <ImageView
+		            android:id="@+id/imageViewMediaPic"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:src="@drawable/program_loading_bg"
+		            android:scaleType="fitXY"
+		            />
+		</LinearLayout>
+		
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_weight="3"
+            android:layout_marginLeft="20dp"
+            >
+		    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+         	android:layout_weight="3"
+            android:orientation="vertical" 
+           
+            >    
+            
+	           
+	            <TextView
+	            android:id="@+id/textViewTitle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	         
+	            android:text="片名：凤凰卫视调试视频" 
+	            android:textSize="@dimen/media_title_fontsize"/>
+
+	             <TextView
+	            android:id="@+id/textViewPublishTime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="@dimen/media_title_fontsize"
+	            android:text="发布时间:2014-3-23 12:23:49" />
+
+	             <TextView
+	            android:id="@+id/textViewActor"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="@dimen/media_title_fontsize"
+	            android:text="演员：吴小莉,胡一虎" />
+	              <TextView
+	            android:id="@+id/textViewAuthor"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="@dimen/media_title_fontsize"
+	            android:text="导演：吴小莉" />
+	            
+               <ScrollView
+			    android:id="@+id/SCROLLER_ID"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:scrollbars="vertical"
+			    android:fillViewport="true">
+		              <TextView
+		            android:id="@+id/textViewDesc"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/media_title_fontsize"
+		          
+		            android:text="简介：凤凰卫视中文台，全球华人新闻大全" 
+		            />
+	            </ScrollView>   
+            </LinearLayout>
+            
+		    
+		    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" 
+            android:gravity="bottom"
+           
+            >
+
+		        <Button
+		            android:id="@+id/buttonAdd"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="添加到我的课程" 
+		            android:textSize="@dimen/media_title_fontsize"/>
+		        <Button
+		            android:id="@+id/buttonAdd"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="从我的课程删除"
+		            android:textSize="@dimen/media_title_fontsize" />
+		        
+		    </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+         android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp">
+        <ListView
+	        android:id="@+id/listViewCourseware"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	         >
+	    </ListView>
+    </LinearLayout>
+	
+</LinearLayout>

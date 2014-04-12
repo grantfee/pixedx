@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    
+   >
+	 <HorizontalScrollView
+                android:id="@+id/horizontalScrollViewCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+				android:layout_marginBottom="@dimen/screen_bottom_margin"
+                >
+                
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+   
+    >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:rowCount="2"
+        android:columnCount="8"
+        android:orientation="vertical"
+
+        >
+        
+        <FrameLayout
+            android:layout_row="0"
+            android:layout_column="0"
+		 	android:layout_gravity="fill"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="3dp"
+			>
+            <ImageView
+                android:id="@+id/imageViewCat0"
+                android:layout_width="@dimen/category_pic_width"
+                android:layout_height="@dimen/category_pic_height"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:focusable="true"
+           		android:src="@drawable/training"
+                 
+                />
+            <TextView
+                android:id="@+id/textViewCat0"
+                android:layout_width="@dimen/category_pic_width"
+                android:layout_height="wrap_content"
+                android:text="摄影" 
+                android:background="#000000"
+                android:alpha="0.6"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:focusable="false"
+               />
+            
+        </FrameLayout>
+        
+        <FrameLayout
+         
+		 	android:layout_gravity="fill"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="3dp"
+			>
+            <ImageView
+                android:id="@+id/imageViewCat0"
+                android:layout_width="@dimen/category_pic_width"
+                android:layout_height="@dimen/category_pic_height"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:focusable="true"
+           		android:src="@drawable/training"
+                 
+                />
+            <TextView
+                android:id="@+id/textViewCat0"
+                android:layout_width="@dimen/category_pic_width"
+                android:layout_height="wrap_content"
+                android:text="英语培训" 
+                android:background="#000000"
+                android:alpha="0.6"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:focusable="false"
+               />
+            
+        </FrameLayout>
+        
+        
+       
+        </GridLayout>
+     </LinearLayout>
+     </HorizontalScrollView>
+     
+</LinearLayout>

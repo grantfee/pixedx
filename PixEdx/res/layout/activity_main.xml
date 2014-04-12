@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg"
+    tools:context=".MainActivity" >
+    
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/screen_top_margin"
+        android:gravity="top|left"
+        >
+        <ImageView
+	        android:id="@+id/imageViewLogo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="@dimen/screen_left_margin"
+	        android:src="@drawable/pixbox_logo" 
+			/>
+
+        <TextView
+            android:id="@+id/textViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+           
+            android:layout_toRightOf="@+id/imageViewLogo"
+            android:text=" . 闵行区教育学院" 
+            android:textSize="35sp"
+            android:textColor="#ffffff"/>
+		
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_marginLeft="@dimen/screen_left_margin"
+	   >
+	   
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="top"
+		   	android:layout_marginTop="10dp"
+		    >
+			<com.pixbox.main.TabFrameLayout
+		        android:id="@+id/tabutton"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        
+		        >
+		    </com.pixbox.main.TabFrameLayout>
+		</LinearLayout>
+		<!-- android:fillViewport="true" -->
+		<LinearLayout
+		    android:id="@+id/videoPage"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    android:clipChildren="false"
+		    >
+		    <android.support.v4.view.ViewPager
+	            android:id="@+id/adv_pager"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginRight="@dimen/pager_margin">
+	        </android.support.v4.view.ViewPager>
+	    </LinearLayout>
+    </LinearLayout>
+	<!--  <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dp" 
+	    android:orientation="horizontal">
+
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center_vertical" >
+
+			<TextView
+			    android:id="@+id/textView1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="48dp"
+			    android:text=""
+			    android:textColor="@color/idcard"
+			    android:textSize="28dip"
+			    android:textStyle="italic" />
+
+			<TextView
+			    android:id="@+id/textView2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginRight="200dp"
+			    android:text=""
+			    android:textColor="#ffffff"
+			    android:textSize="35dip"
+			    android:textStyle="bold|italic" />
+
+			<TextView
+			    android:id="@+id/textView3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBaseline="@+id/textView2"
+			    android:layout_alignBottom="@+id/textView2"
+			    android:layout_alignLeft="@+id/textView2"
+			    android:layout_marginLeft="60dp"
+			    android:text=""
+			    android:textColor="#ffffff"
+			    android:textSize="28dip" />
+
+			<TextView
+			    android:id="@+id/textView4"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBaseline="@+id/textView3"
+			    android:layout_alignBottom="@+id/textView3"
+			    android:layout_marginLeft="15dp"
+			    android:layout_toRightOf="@+id/textView3"
+			    android:text=""
+			    android:textColor="@color/green"
+			    android:textSize="28dip" />
+
+		</RelativeLayout>
+
+	</LinearLayout> -->
+    
+</LinearLayout>
